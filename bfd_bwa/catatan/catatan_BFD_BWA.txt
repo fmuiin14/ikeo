@@ -1,0 +1,102 @@
+Vid1
+Scope Pekerjaan Backend
+	- Menganalisis Sistem
+	- Membuat ERD
+	- Membuat Database
+	- Membuat Admin Panel (CMS)
+	- Mengintegrasikan Aplikasi Backend
+	- Mengamankan Aplikasi Backend
+	- Deployment Aplikasi ke Server
+	
+Tools yg digunakan
+	VSCode
+	Laragon (XAMPP)
+	Laravel
+		Support Tools
+			Lucidchart (untuk ERD)
+			Adminer (phpmyadmin)
+			Mailtrap
+			Midtrans
+
+Review Bahan Project
+	http://joinbwa.com/bfdhtml
+	
+Install Laravel 8
+	composer create-project --prefer-dist laravel/laravel="^8.0" bfd-laravel
+	
+Setup Database
+	ikeo nama db nya
+	
+------------------------------------------------------------------------------
+Vid2	
+Setup mailtrap
+	Konfigurasi mailtrap sebagai email service. Karena di development lebih baik pakai mailtrap, 
+supaya tidak dideteksi sebagai spam. Register. Add Inbox, Save. Klik, lalu konfigurasi jd Laravel
+pada .env nya
+	
+Instalasi Laravel Jetstream
+	Library untuk autentikasi. Login, registrasi, email verif, sdh sm laravel jetstream.
+		composer require laravel/jetstream
+		php artisan jetstream:install livewire
+		npm install && npm run dev
+		php artisan vendor:publish --tag=jetstream-views
+	
+Instalasi Laravel Datatables
+	Adalah library untuk membuat table yg lebih dinamis. 
+	composer require yajra/laravel-datatables-oracle:"~9.0"
+	php artisan vendor:publish --provider="Yajra\DataTables\DataTablesServiceProvider"
+	
+------------------------------
+Vid3
+	Ini adalah htmlnya, bisa download https://drive.google.com/file/d/1rxE-H7ed2rzeAqmZ8f65LSHB0DZQCC2v/view?usp=sharing.
+	Ini adalah desain database nya (https://drive.google.com/drive/u/0/folders/1wvNDR1aOywMTvEPQRywiLrfqZZ4VxxvD)
+	
+Analisis Database
+	Produk
+		1. Nama Produk
+		2. Harga Produk
+		3. Deskripsi Produk
+		4. Slug
+		5. Soft Deletes
+	Galeri Produk
+		1. Relasi ke produk
+		2. URL Gambar
+		3. Is featured
+		4. Soft Deletes
+		
+	Cart
+		1. Relasi ke user
+		2. Relasi ke produk
+		
+	Transaksi
+		1. Relasi ke user
+		2. Data diri dari pembeli
+		3. Data kurir
+		4. Data pembayaran
+		5. Total harga
+		6. Status
+		
+	Item Transaksi
+		1. Relasi ke user
+		2. Relasi ke produk
+		3. Relasi ke transaksi
+		
+	User
+		1. Roles (admin/user)
+
+transactions : payment url -> karena midtrans akan mengembalikan string dari api nya,
+
+Migration table user
+	Awalnya sudah ada, tp best practice nya buat migration baru saat menambahkan field.
+		nambahin field: php artisan make:migration add_roles_to_users_table --table=users
+		
+		Schema::table('users', function (Blueprint $table) {
+			$table->string('roles')->after('email')->default('USER');
+			});
+	php artisan migrate
+
+----------------
+vid4
+	Database migration product
+		Bikin model, nanti otomatis migrationnya kebuat jg. 
+			php artisan make:model Product --migration
