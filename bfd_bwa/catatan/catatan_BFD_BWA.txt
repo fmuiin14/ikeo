@@ -49,7 +49,7 @@ Instalasi Laravel Datatables
 ------------------------------
 Vid3
 	Ini adalah htmlnya, bisa download https://drive.google.com/file/d/1rxE-H7ed2rzeAqmZ8f65LSHB0DZQCC2v/view?usp=sharing.
-	Ini adalah desain database nya (https://drive.google.com/drive/u/0/folders/1wvNDR1aOywMTvEPQRywiLrfqZZ4VxxvD)
+	Ini adalah desain database nya (https://drive.google.com/file/d/1vnJxjksf2vv8xVFaamhXO0AgN-qgQhQe/view?usp=sharing)
 	
 Analisis Database
 	Produk
@@ -100,3 +100,22 @@ vid4
 	Database migration product
 		Bikin model, nanti otomatis migrationnya kebuat jg. 
 			php artisan make:model Product --migration
+			
+----------------
+vid5
+Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
+	Database migration product galleries
+		php artisan make:model ProductGallery --migration
+---------------
+vid6
+Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
+	Database migration table cart
+		php artisan make:model Cart --migration 
+---------------
+Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
+	Database migration table transaksi
+		php artisan make:model Transaction --migration
+		
+		
+		
+		
