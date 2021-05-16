@@ -112,10 +112,33 @@ Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
 	Database migration table cart
 		php artisan make:model Cart --migration 
 ---------------
+vid7 Migration 
 Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
 	Database migration table transaksi
 		php artisan make:model Transaction --migration
-		
-		
+	Database migration transaction items
+		php artisna make:model TransactionItem --migration
+---------------
+vid8 Model Start
+	ModelUser
+		Relasi user, lalu nambahin field baru sesuai yg td sudah ditambahin (roles).
+	Kenapa hrs nambahin? -> Jd jika nanti buat CRUD/ input data, maka fillable akan terpakai 
+	ketika kita menggunakan mass assigment.
+		Relasi User One to Many,
+			dari user ke ke transaction. Sisanya tambahin sendiri untuk transaction dan transItems
+			
+---------------
+vid9 ModelProduk
+	A
+	
+
+
+
+
+
+
+
+
+	
 		
 		
