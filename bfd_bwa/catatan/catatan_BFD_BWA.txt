@@ -128,8 +128,19 @@ vid8 Model Start
 			dari user ke ke transaction. Sisanya tambahin sendiri untuk transaction dan transItems
 			
 ---------------
-vid9 ModelProduk
-	A
+vid9 
+modelProduk - Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
+	app\Models\Product.php, tambahkan trait softdeletes dan relasi ke gallery
+modelProductGallery
+	app\Models\ProductGallery.php, hanya perlu menambahkan fillable saja, karena relasi yg sdh
+dibuat tdk perlu buat kebalikannya (productgallery dipanggil dr product) jd perlu buat fillable 
+aja. 
+-----------------
+vid10
+modelCarts
+	app\Models\Cart.php, fillable dan relasi.
+modelTransaction
+	app\Models\Transaction, SoftDeletes, fillable, relasi
 	
 
 
