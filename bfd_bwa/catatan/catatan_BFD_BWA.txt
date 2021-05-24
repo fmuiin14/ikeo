@@ -137,19 +137,17 @@ dibuat tdk perlu buat kebalikannya (productgallery dipanggil dr product) jd perl
 aja. 
 -----------------
 vid10
-modelCarts
+modelCarts - Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
 	app\Models\Cart.php, fillable dan relasi.
 modelTransaction
 	app\Models\Transaction, SoftDeletes, fillable, relasi
+-----------------
+
+vid11
+Copy folder FE,
+Layout untuk FE, di halaman index dulu.
 	
 
 
 
 
-
-
-
-
-	
-		
-		
