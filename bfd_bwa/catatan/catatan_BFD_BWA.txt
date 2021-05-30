@@ -143,11 +143,16 @@ modelTransaction
 	app\Models\Transaction, SoftDeletes, fillable, relasi
 -----------------
 
-vid11
+vid11 - Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
 Copy folder FE,
 Layout untuk FE, di halaman index dulu.
 	
+-----------------
 
-
+vid12 - Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
+Integrasi halaman html ke blade halaman Home
+butuh kontroller semua LP/ FE,
+	FrontendController
+		index
 
 
