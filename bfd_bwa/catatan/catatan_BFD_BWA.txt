@@ -155,4 +155,9 @@ butuh kontroller semua LP/ FE,
 	FrontendController
 		index
 
+------------------
+
+vid13 - Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
+Integrasi html ke blade halaman details
+route baru
 

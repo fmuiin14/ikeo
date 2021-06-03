@@ -26,11 +26,11 @@
 
 <body>
     <!-- Add your site or application content here -->
-    @include('components.frontend.navbar');
+    @include('components.frontend.navbar')
     
-    @yield('content');
+    @yield('content')
 
-    @include('components.frontend.footer');
+    @include('components.frontend.footer')
 
     <!-- START: LOAD SVG -->
     <!-- <svg width="23" height="26" class="hidden" id="icon-play">
