@@ -175,4 +175,21 @@ vid15 - Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
 app.blade.php, nambahin script dari 
 https://gist.github.com/galpratama/d48bccac429fe7a275a2fd0f2a2883d5
 
+--------------------------------------
+
+vid16 - Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
+menambahkan middleware
+	semacam satpam (penengah), apakah admin atau bukan.
+Coba register di appnya, udh dibuat sm jetstream.
+ubah logo di aplica, aplica, authen
+		php artisan make:middleware IsAdmin,
+			buat ngecek apakah admin atau bukan.
+		Daftarin di kernel supaya bisa dipake dimanapun
+		
+		
+		
+
+
+
+
 

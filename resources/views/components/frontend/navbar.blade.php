@@ -3,7 +3,8 @@
     <div class="container mx-auto py-5">
         <div class="flex flex-stretch items-center">
             <div class="w-56 items-center flex">
-                <a href="{{ route('index') }}"><img src="/fe/images/content/logo.png"
+                <a href="{{ route('index') }}">
+                    <img src="/fe/images/content/logo.png"
                         alt="Luxspace | Fulfill your house with beautiful furniture" /></a>
             </div>
             <div class="w-full"></div>
