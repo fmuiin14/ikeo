@@ -169,3 +169,10 @@ html ke blade halama success
 breadcumb, complete your room
 breadcumb, success
 
+-------------------
+
+vid15 - Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
+app.blade.php, nambahin script dari 
+https://gist.github.com/galpratama/d48bccac429fe7a275a2fd0f2a2883d5
+
+
