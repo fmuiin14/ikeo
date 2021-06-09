@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,6 +30,6 @@ Route::middleware(['auth:sanctum', 'verified'])->name('dashboard.')->prefix('das
 
     // untuk admin, tp nanti aja. prefix, ada di url
     Route::middleware(['admin'])->group(function (){
-
+        Route::resource('product', ProductController::class);
     });
 });
