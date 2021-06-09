@@ -22,15 +22,11 @@ Route::get('/details/{slug}', [FrontendController::class, 'details'])->name('det
 Route::get('/cart', [FrontendController::class, 'cart'])->name('cart');
 Route::get('/checkout/success', [FrontendController::class, 'success'])->name('checkout-success');
 
-// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-//     return view('dashboard');
-// })->name('dashboard');
-
 // ini namanya grouping routing
 Route::middleware(['auth:sanctum', 'verified'])->name('dashboard.')->prefix('dashboard')->group(function (){
     Route::get('/', [DashboardController::class, 'index'])->name('index');
 
-    // untuk admin, tp nanti aja
+    // untuk admin, tp nanti aja. prefix, ada di url
     Route::middleware(['admin'])->group(function (){
 
     });

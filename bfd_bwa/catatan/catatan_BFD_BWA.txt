@@ -192,8 +192,15 @@ vid17 - Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
 merapikan routing dan controller untuk dashboard
 	php artisan make:controller DashboardController
 
+-------------------------------
 
-
+vid18 - Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
+validasi formRequest untuk crud product
+	formrequest: kita naruh validasi tp di form request, ngga perlu di controller
+cek aja di web laravel form request ..
+	php artisan make:request ProductRequest. Isi, sesuaikan
+	
+	
 
 
 
