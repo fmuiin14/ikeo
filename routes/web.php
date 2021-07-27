@@ -25,11 +25,11 @@ Route::get('/cart', [FrontendController::class, 'cart'])->name('cart');
 Route::get('/checkout/success', [FrontendController::class, 'success'])->name('checkout-success');
 
 // ini namanya grouping routing
-Route::middleware(['auth:sanctum', 'verified'])->name('dashboard.')->prefix('dashboard')->group(function (){
+Route::middleware(['auth:sanctum', 'verified'])->name('dashboard.')->prefix('dashboard')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('index');
 
     // untuk admin, tp nanti aja. prefix, ada di url
-    Route::middleware(['admin'])->group(function (){
+    Route::middleware(['admin'])->group(function () {
         Route::resource('product', ProductController::class);
     });
 });

@@ -205,12 +205,21 @@ cek aja di web laravel form request ..
 vid19 - Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
 CRUD product, kali ini halaman index
 edit di navigation-menu.blade, yg dashboard jadi dashboard.index
-lalu buat controller, kali ini pake --resource biar lengkap
-	php artisan make:ProductController --resource (biar sdh ada boilerplate/ templatenya)
-Bikin folder baru di pages/dashboard, dan sisanya jg.
-Pake layout dr view, dashboard.blade.php copy ke index yg ada di pages\dashboard\product\index
-sampe 7.50
 
+lalu buat controller, kali ini pake --resource biar lengkap
+
+	php artisan make:ProductController --resource (biar sdh ada boilerplate/ templatenya)
+	
+Bikin folder baru di pages/dashboard/product, dan sisanya jg.
+
+Pake layout dr view, dashboard.blade.php copy ke index yg ada di pages\dashboard\product\index
+
+Lalu urus route untuk ProductController
+
+Bikin markup di index pada product (mention jg script di app.blade)
+
+
+FINISH di productcontroller kasi kode id request ajax
 
 
 
