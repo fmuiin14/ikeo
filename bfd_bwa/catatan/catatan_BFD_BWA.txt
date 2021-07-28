@@ -194,7 +194,7 @@ merapikan routing dan controller untuk dashboard
 
 -------------------------------
 
-vid18 - Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
+vid18 - Tutorial Project Furniture Online Shop Larave\l 8 Bahasa Indonesia
 validasi formRequest untuk crud product
 	formrequest: kita naruh validasi tp di form request, ngga perlu di controller
 cek aja di web laravel form request ..
@@ -221,9 +221,16 @@ Bikin markup di index pada product (mention jg script di app.blade)
 
 FINISH di productcontroller kasi kode id request ajax
 
-BIKIN VIDEONYA DULU 27 JULI
 -------------------------------------------------------------------
 
 vid20 - Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
+Membuat fitur createProduct, bikin template untuk tampilan createnya. 
 
-Membuat fitur createProduct
+ProductController create, 
+layouts app biar bener, 
+create blade php 
+
+---------------------------------------------------------------------
+
+vid21 - Tutorial Project Furniture Online Shop Laravel 8 Bahasa Indonesia
+controller aja create
