@@ -26,7 +26,7 @@ class ProductController extends Controller
         }
         return view('pages.dashboard.product.index');
     }
-
+    
     /**
      * Show the form for creating a new resource.
      *
@@ -34,7 +34,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.dashboard.product.create');
     }
 
     /**

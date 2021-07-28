@@ -107,7 +107,7 @@
 
         @livewireScripts
 
-        <!--- Tambahkan setelah @livewireScripts --->
+        <!--- Tambahkan setelah livewire --->
         {{ $script ?? '' }}
     </body>
 </html>
